@@ -1,0 +1,17 @@
+#profile {
+  border: 5px solid black;
+  margin: inherit;
+  float: left;
+  padding: 4px
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.form-group {
+  margin: 10px;
+  float: left;
+  
+}
