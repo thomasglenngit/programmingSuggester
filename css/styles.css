@@ -1,8 +1,9 @@
 #profile {
   border: 5px solid black;
+  width: 400px;
   margin: inherit;
   float: left;
-  padding: 4px
+  padding: 7px;
 }
 
 body {
@@ -10,8 +11,8 @@ body {
   color
 }
 
-.form-group {
+/* .form-group {
   margin: 10px;
   float: left;
 
-}
+} */
