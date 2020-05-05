@@ -54,14 +54,14 @@
         <label for="age">Are you 18 years of age or older?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="age" value="legal" checked>
+              <input type="radio" name="age" value="1" checked>
               Yes
             </label>
           </div>
 
           <div class="radio">
             <label>
-              <input type="radio" name="age" value="illegal">
+              <input type="radio" name="age" value="0">
               No
             </label>
           </div>
@@ -71,7 +71,7 @@
         <label for="sit">Do you like sitting for long periods of time and staring at computer screens?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="sit" value="butt" checked>
+              <input type="radio" name="sit" value="1" checked>
               Yes
             </label>
           </div>
@@ -79,30 +79,53 @@
 
       <div class="radio">
         <label>
-          <input type="radio" name="sit" value="butt" checked>
+          <input type="radio" name="sit" value="0" checked>
           No
         </label>
       </div>
 
       <div class="form-group">
-        <label for="fail">Do you have a healthy relationship with failure?</label>
+        <label for="fail">Do you have a healthy relationship with failure?
+        </label>
         <div class="radio">
           <label>
-            <input type="radio" name="fail" value="success" checked>
+            <input type="radio" name="fail" value="1" checked>
             Yes
           </label>
         </div>
       </div>
-
+      
         <div class="radio">
           <label>
-            <input type="radio" name="fail" value="success" checked>
+            <input type="radio" name="fail" value="0" checked>
             No
           </label>
         </div>
+      
 
+      <div class="form-group">
+        <label for="life">Do you have much of a social life?... I mean, c'mon. Really...?
+        </label>
 
-      <button type="submit" class="btn-primary">Submit if personal information is correct.</button>
+        <div class="radio">
+          <label>
+            <input type="radio" name="life" value="1" checked>
+            Yes
+          </label>
+        </div>
+      
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="life" value="0" checked>
+            No
+          </label>
+        </div>
+      </div>
+      
+
+        Press
+      <button type="submit" class="btn-primary">Submit</button> if personal information is correct.
     </form>
 
       <div id="output" class="firstName" class="lastName" class="address" class="phone">
