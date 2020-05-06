@@ -23,28 +23,28 @@ $(document).ready(function() {
   
   // this code will display the results of the quiz:
   
-    var age = parseInt($("input:radio[name=age]:checked").val());
-    var sit = parseInt($("input:radio[name=sit]:checked").val());
-    var fail = parseInt($("input:radio[name=fail]:checked").val());
-    var life = parseInt($("input:radio[name=life]:checked").val());
+    // var age = parseInt($("input:radio[name=age]:checked").val());
+    // var sit = parseInt($("input:radio[name=sit]:checked").val());
+    // var fail = parseInt($("input:radio[name=fail]:checked").val());
+    // var life = parseInt($("input:radio[name=life]:checked").val());
 
   
-    var language = add(age, sit, fail, life);
+    // var language = add(age, sit, fail, life);
 
    
-    if (language === 4) {
-      var result = ("C#");
-    } else if (language === 3) {
-      var result = ("JavaScript");
-    } else if (language === 2) {
-      var result = ("Python");
-    } else if (language <= 1) {
-      var result = ("Swift");
-    }
+    // if (language === 4) {
+    //   var result = alert("C#");
+    // } else if (language === 3) {
+    //   var result = alert("JavaScript");
+    // } else if (language === 2) {
+    //   var result = alert("Python");
+    // } else if (language <= 1) {
+    //   var result = alert("Swift");
+    // }
     
-    $(".result").text(result);
+    // $(".result").text(result);
 
-    $("#output").text(info + result);
+    $("#output").text(info);
   });
 });
 
