@@ -2,7 +2,9 @@
 var add = function(age, sit, fail, life) {
     return age + sit + fail + life;
 
-});
+};
+
+// this code will display user information:
 
 $(document).ready(function() {
   $("form#profile").submit(function(event) {
@@ -16,36 +18,37 @@ $(document).ready(function() {
     $(".lastName").text(name2);
     $(".address").text(address);
     $(".phone").text(phone);
-  
 
+    var info = display(name1, name2, address, phone);
+  
+  // this code will display the results of the quiz:
+  
     var age = parseInt($("input:radio[name=age]:checked").val());
     var sit = parseInt($("input:radio[name=sit]:checked").val());
     var fail = parseInt($("input:radio[name=fail]:checked").val());
     var life = parseInt($("input:radio[name=life]:checked").val());
 
-    var result1 = ((name1) + (name2) + (address) + (phone));
-    var result2 = add(age, sit, fail, life);
+  
+    var language = add(age, sit, fail, life);
 
    
-    if (result2 = 4) {
-      alert("C#");
-    } else if (result2 = 3) {
-      alert("JavaScript");
-    } else if (result2 = 2) {
-      alert("Python");
-    } else if (result2 <= 1) {
-      alert("Swift");
+    if (language === 4) {
+      var result = ("C#");
+    } else if (language === 3) {
+      var result = ("JavaScript");
+    } else if (language === 2) {
+      var result = ("Python");
+    } else if (language <= 1) {
+      var result = ("Swift");
     }
     
-    
-    $("#output").text(result1 + result2);
+    $(".result").text(result);
+
+    $("#output").text(info + result);
   });
 });
 
- // $(".ideal").text(address);
 
-    // $("#output").show();
-
-    // if (gender === 'male' && 'athletic') {
-    //   output = "schwarzenegger"
-    // }
+// function newProfile(name1, name2, address, phone) {
+//   return ((name1) + (name2) + (address) + (phone));
+// }
