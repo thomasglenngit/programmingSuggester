@@ -1,5 +1,20 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 50px;
+  background-image: url(https://www.shell.ca/en_ca/careers/shell-scenario-sky/_jcr_content/pagePromo/image.img.960.jpeg/1548184031017/clear-blue-sky.jpeg);
+}
+
+h1 {
+  border: 3px solid lightcyan;
+  padding: 3px;
+  width: 230px;
+  float: middle;
+  
+}
+
 #profile {
-  border: 5px solid black;
+  border: 5px solid white;
   width: 400px;
   margin: inherit;
   float: left;
@@ -8,17 +23,18 @@
 
 #present {
   display: none;
-  border: 5px solid black;
+  border: 5px solid white;
   width: 400px;
   margin: inherit;
   float: right;
   padding: 7px;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  
+#output2 {
+  border: 2px;
+  font-weight: 500;
 }
+
 
 
 /* .form-group {
