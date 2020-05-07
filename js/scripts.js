@@ -19,7 +19,7 @@ $(document).ready(function() {
     // $(".address").text(address);
     // $(".phone").text(phone);
 
-    // var info = display(name1, name2, address, phone);
+    // var info = text(name1, name2, address, phone);
   
   // this code will display the results of the quiz:
   
@@ -28,21 +28,20 @@ $(document).ready(function() {
     var fail = parseInt($("input:radio[name=fail]:checked").val());
     var life = parseInt($("input:radio[name=life]:checked").val());
 
-  
     var language = add(age, sit, fail, life);
 
    
     if (language === 4) {
-      var result = "C#";
+      var result = ("C#");
     } else if (language === 3) {
-      var result = "JavaScript";
+      var result = ("JavaScript");
     } else if (language === 2) {
-      var result = "Python";
+      var result = ("Python");
     } else if (language <= 1) {
-      var result = "Swift";
+      var result = ("Swift");
     }
     
-    // $(".result").text(result);
+    $(".result").text(result);
 
     $("#output").text(result);
   });
