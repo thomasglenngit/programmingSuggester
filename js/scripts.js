@@ -4,7 +4,7 @@ var add = function(age, sit, fail, life) {
 
 };
 
-// this code will display user information:
+// Part A. This code will display user information (but not in combination with Part B):
 
 $(document).ready(function() {
   $("form#profile").submit(function(event) {
@@ -20,8 +20,10 @@ $(document).ready(function() {
     // $(".phone").text(phone);
 
     // var info = text(name1, name2, address, phone);
+
+    // $("#output1").text(info);
   
-  // this code will display the results of the quiz:
+  // Part B. This code will display the results of the quiz:
   
     var age = parseInt($("input:radio[name=age]:checked").val());
     var sit = parseInt($("input:radio[name=sit]:checked").val());
@@ -43,7 +45,7 @@ $(document).ready(function() {
     
     $(".result").text(result);
 
-    $("#output").text(result);
+    $("#output2").text(result);
   });
 });
 
