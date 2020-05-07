@@ -21,19 +21,21 @@ $(document).ready(function() {
 
     // var info = text(name1, name2, address, phone);
 
+
     // $("#output1").text(info);
   
   // Part B. This code will display the results of the quiz:
   
     var age = parseInt($("input:radio[name=age]:checked").val());
+    var junk = parseInt($("input:radio[name=junk]:checked").val());
     var sit = parseInt($("input:radio[name=sit]:checked").val());
     var fail = parseInt($("input:radio[name=fail]:checked").val());
     var life = parseInt($("input:radio[name=life]:checked").val());
 
-    var language = add(age, sit, fail, life);
+    var language = add(age, junk, sit, fail, life);
 
    
-    if (language === 4) {
+    if (language >= 4) {
       var result = ("C#");
     } else if (language === 3) {
       var result = ("JavaScript");
