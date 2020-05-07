@@ -6,7 +6,8 @@
   padding: 7px;
 }
 
-.present {
+#present {
+  display: none;
   border: 5px solid black;
   width: 400px;
   margin: inherit;
@@ -16,8 +17,9 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color
+  
 }
+
 
 /* .form-group {
   margin: 10px;

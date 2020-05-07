@@ -4,7 +4,7 @@ var add = function(age, sit, fail, life) {
 
 };
 
-// Part A. This code will display user information (but not in combination with Part B):
+// Part A. This code will display user information (but not in combination with Part B - for some reason.):
 
 $(document).ready(function() {
   $("form#profile").submit(function(event) {
@@ -43,8 +43,8 @@ $(document).ready(function() {
       var result = ("Swift");
     }
     
-    $(".result").text(result);
-
+    // $(".result").text(result);
+    $("#present").show();
     $("#output2").text(result);
   });
 });
