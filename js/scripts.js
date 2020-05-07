@@ -4,28 +4,12 @@ var add = function(age, sit, fail, life) {
 
 };
 
-// Part A. This code will display user information (but not in combination with Part B - for some reason.):
-
 $(document).ready(function() {
   $("form#profile").submit(function(event) {
     event.preventDefault();
-    // var name1 = $("input#firstName").val();
-    // var name2 = $("input#lastName").val();
-    // var address = $("input#address").val();
-    // var phone = $("input#phone").val();
-   
-    // $(".firstName").text(name1);
-    // $(".lastName").text(name2);
-    // $(".address").text(address);
-    // $(".phone").text(phone);
-
-    // var info = text(name1, name2, address, phone);
-
-
-    // $("#output1").text(info);
   
-  // Part B. This code will display the results of the quiz:
-  
+    // Part A. This code will display the results of the quiz:
+
     var age = parseInt($("input:radio[name=age]:checked").val());
     var junk = parseInt($("input:radio[name=junk]:checked").val());
     var sit = parseInt($("input:radio[name=sit]:checked").val());
@@ -33,7 +17,7 @@ $(document).ready(function() {
     var life = parseInt($("input:radio[name=life]:checked").val());
 
     var language = add(age, junk, sit, fail, life);
-
+   
    
     if (language >= 4) {
       var result = ("C#");
@@ -45,9 +29,24 @@ $(document).ready(function() {
       var result = ("Swift");
     }
     
-    // $(".result").text(result);
     $("#present").show();
     $("#output2").text(result);
+
+    // Part B. This code will display the personal information of the user:
+
+    var name1 = $("input#firstName").val();
+    var name2 = $("input#lastName").val();
+    var address = $("input#address").val();
+    var phone = $("input#phone").val();
+   
+    $(".firstName").text(name1);
+    $(".lastName").text(name2);
+    $(".address").text(address);
+    $(".phone").text(phone);
+
+    var info = text(name1, name2, address, phone);
+
+    $("#output1").text(info);
   });
 });
 

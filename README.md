@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is my second code review assignment through <em>Epicodus</em>. It is a fictional page to determine the best approach to coding for those wondering where to start. The user inputs personal information and preferences into a quiz, submits the information, and the quiz returns a result._
+_This is my second code review assignment through <em>Epicodus</em>. It is a fictional page to determine the most appropriate first language for those prospective coders wondering where to start. The user inputs personal information and preferences into a quiz, submits the information, and the quiz returns a result._
 
 ## Setup/Installation Requirements
 
@@ -26,7 +26,7 @@ https://thomasglenngit.github.com
 
 ## Known Bugs
 
-I spent more time than I desired reconciling two pieces of code: user profile, and the quiz results. The difficulty lies in getting them to display simultaneously. I can get them to display individually, but not together. Any advice from others is very welcome in resolving this problem.
+I spent more time than I desired reconciling two pieces of code: user profile, and the quiz results. The difficulty lay in getting them to display simultaneously. I could get them to display individually, but not together. Only when I reversed the order, setting the branch conditions first, did the two display simultaneously. Try it out for yourself. I'm sure there is an easier way. Any advice from others is very welcome in understanding this problem.
 
 ## Support and contact details
 
